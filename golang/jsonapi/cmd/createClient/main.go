@@ -3,14 +3,14 @@ package main
 import (
 	"fmt"
 	"os"
+	"flag"
 
 	"github.com/rmrobinson-textnow/howtodox/golang/jsonapi"
-	"flag"
 )
 
 var (
 	title = flag.String("title", "", "The title of the post")
-	body = flag.String("body", "", "The body of the post")
+	body  = flag.String("body", "", "The body of the post")
 )
 
 func main() {
