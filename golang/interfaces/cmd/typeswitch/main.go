@@ -20,6 +20,8 @@ func typeswitch(iface interface{}) {
 		fmt.Printf("fieldA: %s, fieldB: %d\n", t.fieldA, t.fieldB)
 	case secondType:
 		fmt.Printf("fieldOne: %d, fieldTwo: %0.2f\n", t.fieldOne, t.fieldTwo)
+	case int:
+		fmt.Printf("integer: %d\n", t)
 	}
 }
 
