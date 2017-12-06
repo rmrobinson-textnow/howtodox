@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option go_package="proto";
+
+message TestRequest {
+    string a = 1;
+}
+
+message TestResponse {
+    string b = 1;
+}
+
+service Test {
+    rpc TestFunction (TestRequest) returns (TestResponse) {}
+}
+
