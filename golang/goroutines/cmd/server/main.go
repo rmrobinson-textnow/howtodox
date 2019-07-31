@@ -1,11 +1,11 @@
 package main
 
 import (
+	"encoding/json"
 	"flag"
+	"fmt"
 	"net/http"
 	"time"
-	"fmt"
-	"encoding/json"
 )
 
 var (

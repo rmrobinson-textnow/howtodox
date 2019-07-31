@@ -1,16 +1,16 @@
 package main
 
 import (
-	"flag"
 	"encoding/json"
-	"net/http"
+	"flag"
 	"fmt"
-	"time"
+	"net/http"
 	"sync"
+	"time"
 )
 
 var (
-	reqCount = flag.Int("reqCount", 100, "The number of connections to make")
+	reqCount  = flag.Int("reqCount", 100, "The number of connections to make")
 	serverURL = flag.String("serverURL", "http://127.0.0.1:1337", "The server URL to conect to")
 )
 

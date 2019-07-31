@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 
+	"github.com/rmrobinson-textnow/howtodox/golang/contexts/connection"
 	"github.com/rmrobinson-textnow/howtodox/golang/contexts/user"
 	"golang.org/x/net/context"
-	"github.com/rmrobinson-textnow/howtodox/golang/contexts/connection"
 )
 
 func requestHandler(ctx context.Context, body string) {

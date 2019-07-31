@@ -1,16 +1,16 @@
 package main
 
 import (
-	"sync"
-	"math/rand"
 	"fmt"
+	"math/rand"
+	"sync"
 )
 
 type lockableType struct {
 	sync.Mutex
 
 	fieldA map[int]int
-	count int
+	count  int
 }
 
 func process(l *lockableType) {
@@ -34,12 +34,12 @@ func main() {
 
 	l := &lockableType{
 		fieldA: map[int]int{},
-		count: 0,
+		count:  0,
 	}
 
 	var wg sync.WaitGroup
 
-	for i := 0 ; i < 10; i++ {
+	for i := 0; i < 10; i++ {
 		wg.Add(1)
 
 		go func() {

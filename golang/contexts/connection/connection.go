@@ -21,4 +21,3 @@ func FromContext(ctx context.Context) (Connection, bool) {
 	user, ok := ctx.Value(connKey).(Connection)
 	return user, ok
 }
-

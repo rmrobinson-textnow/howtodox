@@ -10,8 +10,8 @@ const (
 
 type User struct {
 	Username string
-	Name string
-	Age int
+	Name     string
+	Age      int
 }
 
 func NewContext(ctx context.Context, user *User) context.Context {

@@ -1,11 +1,11 @@
 package main
 
 import (
+	"flag"
+	"fmt"
+	"math/rand"
 	"sync"
 	"time"
-	"math/rand"
-	"fmt"
-	"flag"
 )
 
 var (

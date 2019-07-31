@@ -1,9 +1,9 @@
 package jsonapi
 
 import (
-	"net/http"
-	"encoding/json"
 	"bytes"
+	"encoding/json"
+	"net/http"
 )
 
 const jsonContentType = "application/json; charset=utf-8"
@@ -45,8 +45,8 @@ func (a *API) CreatePost(title string, body string, userID int) (Post, error) {
 	ret := Post{}
 	newPost := Post{
 		UserID: userID,
-		Title: title,
-		Body: body,
+		Title:  title,
+		Body:   body,
 	}
 
 	buf := new(bytes.Buffer)
@@ -57,7 +57,7 @@ func (a *API) CreatePost(title string, body string, userID int) (Post, error) {
 		return ret, err
 	}
 
-	res, err := http.Post(a.url + "/posts", jsonContentType, buf)
+	res, err := http.Post(a.url+"/posts", jsonContentType, buf)
 
 	if err != nil {
 		return ret, err

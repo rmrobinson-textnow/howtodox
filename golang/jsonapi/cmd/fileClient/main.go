@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/rmrobinson-textnow/howtodox/golang/jsonapi"
-	"flag"
 	"encoding/json"
+	"flag"
+	"github.com/rmrobinson-textnow/howtodox/golang/jsonapi"
 )
 
 var (

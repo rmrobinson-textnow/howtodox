@@ -10,7 +10,7 @@ import (
 // SampleType is a sample type we expect the API to return
 type SampleType struct {
 	FieldA string `json:"field_a"`
-	FieldB int `json:"field_b"`
+	FieldB int    `json:"field_b"`
 }
 
 func TestSuccess(t *testing.T) {
